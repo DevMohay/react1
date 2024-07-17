@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+SwiperSlide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px){
+  .navbar{
+    margin: 0;
+    padding: 0 2rem;
+  }
+  .nav-link{
+    display: none;
+  }
+  .bannar{
+    flex-wrap: wrap-reverse;
+    border: 1px solid;
+    
+  }
+  .banner-left{
+    margin:0 2rem;
+    left: 0;
+    max-width: 100%;
+    margin-top: -34rem;
+  }
+  .bannar-right{
+    margin: 0 2rem;
+    
+  }
+  .mySwiper{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    bottom: 25rem;
+    height: 26rem;
+    width: 25rem;
+    left: 0;
+
+  }
+}
